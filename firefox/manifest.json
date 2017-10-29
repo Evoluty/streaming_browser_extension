@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"version": "1",
+	"name": "Live name",
+	"description": "A small description",
+	"icons": { 
+		"128": "icon_notification.png" 
+	},
+
+	"browser_action": {		
+		"default_popup": "pluginWindow.html"
+	},
+	"background": {
+		"scripts": ["jquery-3.2.1.min.js", "update.js"]
+	},
+
+	"permissions": ["alarms", "notifications", "https://www.googleapis.com/*"]
+}
